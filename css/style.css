@@ -1,3 +1,266 @@
+@font-face {
+  font-family: Open Sans;
+  src: url(../fonts/Open_Sans/OpenSans-ExtraBold.ttf);
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: Open Sans;
+  src: url(../fonts/Open_Sans/OpenSans-Bold.ttf);
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: Open Sans;
+  src: url(../fonts/Open_Sans/OpenSans-SemiBold.ttf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: Open Sans;
+  src: url(../fonts/Open_Sans/OpenSans-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Open Sans;
+  src: url(../fonts/Open_Sans/OpenSans-Light.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto/Black.ttf);
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto/Bold.ttf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto/Medium.ttf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto/Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto/Light.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto/Thin.ttf);
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: Source Sans Pro;
+  src: url(../fonts/Source_Sans_Pro/SourceSansPro-Black.ttf);
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: Source Sans Pro;
+  src: url(../fonts/Source_Sans_Pro/SourceSansPro-Bold.ttf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: Source Sans Pro;
+  src: url(../fonts/Source_Sans_Pro/SourceSansPro-SemiBold.ttf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: Source Sans Pro;
+  src: url(../fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Source Sans Pro;
+  src: url(../fonts/Source_Sans_Pro/SourceSansPro-Light.ttf);
+  font-weight: 300;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 body {
-  display: block;
+  font-family: Open Sans, Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.section-heading {
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 210px;
+  color: #c8c6c1;
+}
+
+.section-heading_title {
+  font-family: Source Sans Pro;
+  font-weight: 300;
+  font-size: 35px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  letter-spacing: 5px;
+}
+
+.section-heading_line {
+  width: 150px;
+  height: 1px;
+  background: #c8c6c1;
+}
+
+.section-heading_discr {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  margin: 0;
+}
+
+header {
+  width: 100%;
+  padding-bottom: 20px;
+  position: relative;
+  background: url(../img/header-background.jpg) no-repeat center/cover;
+}
+
+header .top-header {
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+header .top-header_logo {
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+header .top-header_menu .nav-bar {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .top-header_menu .nav-bar .nav-item {
+  list-style: none;
+}
+
+header .top-header_menu .nav-bar .nav-item .nav-link {
+  margin-left: 5px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 12px;
+  padding-right: 12px;
+  color: #c8c6c1;
+  font-size: 16px;
+  border: 1px solid transparent;
+  border-radius: 15px;
+  -webkit-transition: all, 0.5s;
+  transition: all, 0.5s;
+}
+
+header .top-header_menu .nav-bar .nav-item .nav-link:hover {
+  border: 1px solid #c8c6c1;
+}
+
+header .arrow-down {
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 200px;
+  margin-bottom: 70px;
+}
+
+header .arrow-down div {
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 38px;
+  height: 38px;
+  border: 2px solid #c8c6c1;
+  border-radius: 20px;
+  cursor: pointer;
+  -webkit-transition: all, 0.5s;
+  transition: all, 0.5s;
+}
+
+header .arrow-down div i {
+  font-size: 23px;
+  color: #c8c6c1;
+  -webkit-transition: all, 0.5s;
+  transition: all, 0.5s;
+}
+
+header .arrow-down div:hover {
+  border: 2px solid #07a9fd;
+}
+
+header .arrow-down div:hover i {
+  color: #07a9fd;
+  -webkit-transform: translateY(2px);
+  transform: translateY(2px);
 }
