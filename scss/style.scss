@@ -135,10 +135,10 @@ header {
       }
 
       &:hover {
-        border: 2px solid #ff944d;
+        border: 2px solid #19bd9a;
 
         i {
-          color: #ff944d;
+          color: #19bd9a;
           -webkit-transform: translateY(2px);
                   transform: translateY(2px);
         }
@@ -160,30 +160,13 @@ header {
 }
 
 @media only screen and (max-width : 767px) {
-
-}
-
-@media only screen and (max-width : 567px) {
   .section-heading {
-    margin-top: 150px;
-
-    &_title {
-      font-size: 30px;
-      letter-spacing: 4px;
-    }
-
-    &_line {
-      width: 120px;
-    }
-
-    &_discr {
-      font-size: 14px;
-    }
+    margin-top: 130px;
   }
 
   header {
     .top-header {
-      margin-top: 40px;
+      margin-top: 50px;
     }
 
     .arrow-down {
@@ -195,9 +178,145 @@ header {
         height: 30px;
 
         i {
-          font-size: 15px;
+          font-size: 18px;
         }
       }
     }
   }
+}
+
+@media only screen and (max-width : 567px) {
+  .section-heading {
+    margin-top: 90px;
+
+    &_title {
+      font-size: 25px;
+      letter-spacing: 3px;
+    }
+
+    &_line {
+      width: 100px;
+    }
+
+    &_discr {
+      font-size: 13px;
+    }
+  }
+
+  header {
+    .top-header {
+      margin-top: 30px;
+    }
+
+    .arrow-down {
+      margin-top: 110px;
+      margin-bottom: 30px;
+
+      div {
+        width: 25px;
+        height: 25px;
+
+        i {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}
+
+#about-us {
+  width: 100%;
+  padding: 80px 0;
+
+  .about-us_info {
+    padding: 0;
+
+    h1 {
+      color: #333b46;
+      font-family: Source Sans Pro;
+      font-size: 20px;
+      font-weight: 300;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+    }
+
+    p {
+      color: #81868e;
+      margin-top: 45px;
+      margin-bottom: 40px;
+      font-size: 13px;
+      font-weight: 400;
+    }
+
+    .bouncy-btn {
+      font-family: Source Sans Pro;
+      font-size: 16px;
+      font-weight: 400;
+      width: 130px;
+      text-align: center;
+      padding-top: 3px;
+      padding-bottom: 3px;
+      padding-left: 10px;
+      padding-right: 10px;
+      border: 1px solid #000;
+      border-radius: 15px;
+      cursor: pointer;
+      -webkit-transition: all, 0.5s;
+      transition: all, 0.5s;
+
+      &:hover {
+        color: #fff;
+        font-weight: 400;
+        background-color: #12876e;
+        border: 1px solid transparent;
+      }
+    }
+  }
+
+  .about-us_image {
+    margin-left: 130px;
+  }
+}
+@media only screen and (max-width : 1199px) {
+
+}
+
+@media only screen and (max-width : 991px) {
+
+}
+
+@media only screen and (max-width : 767px) {
+  #about-us {
+    padding: 50px 0;
+
+    .about-us_info {
+      text-align: center;
+
+      h1 {
+        font-size: 18px;
+        font-weight: 300;
+      }
+
+      p {
+        margin: 0 auto;
+        width: 60%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-size: 11px;
+      }
+
+      .bouncy-btn {
+        margin: 0 auto;
+        font-size: 15px;
+        width: 125px;
+      }
+    }
+
+    .about-us_image {
+      display: none;
+    }
+  }
+}
+@media only screen and (max-width : 567px) {
+  
 }

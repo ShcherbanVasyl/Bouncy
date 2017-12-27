@@ -68,7 +68,7 @@
       transition: all, 0.5s;
 
       &:hover {
-        color: #ff944d;
+        color: #19bd9a;
       }
     }
 
@@ -79,9 +79,9 @@
       top: 100%;
       width: 100vw;
       z-index: 10;
-      background: rgba(255, 148, 77, 0.9);
-      background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 148, 77, 0.9)), to(rgba(255, 148, 77, 0.9)));
-      background: linear-gradient(rgba(255, 148, 77, 0.9), rgba(255, 148, 77, 0.9));
+      background: rgba(25, 189, 154, 0.8);
+      background: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 189, 154, 0.8)), to(rgba(25, 189, 154, 0.8)));
+      background: linear-gradient(rgba(25, 189, 154, 0.8), rgba(25, 189, 154, 0.8));
 
       .nav-item {
         position: relative;
@@ -91,7 +91,7 @@
         padding-bottom: 20px;
 
         &:hover {
-          background: #cc5200;
+          background: #12876e;
           -webkit-transition: all, .5s;
           transition: all, .5s
         }
@@ -116,7 +116,23 @@
 }
 
 @media only screen and (max-width : 767px) {
+  .nav-bar_menu {
+    .toggler-icon{
+      font-size: 29px;
+    }
 
+    .nav-bar {
+
+      .nav-item {
+        padding-top: 15px;
+        padding-bottom: 15px;
+
+        .nav-link {
+          font-size: 16px;
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (max-width : 567px) {
@@ -126,9 +142,14 @@
     }
 
     .nav-bar {
+
       .nav-item {
-        padding-top: 12px;
-        padding-bottom: 12px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        .nav-link {
+          font-size: 15px;
+        }
       }
     }
   }
