@@ -134,7 +134,8 @@
 }
 
 .nav-bar_menu .nav-bar .nav-item .nav-link:hover {
-  border: 1px solid #c8c6c1;
+  color: #19bd9a;
+  border: 1px solid #19bd9a;
 }
 
 @media only screen and (max-width: 991px) {
@@ -498,5 +499,185 @@ header .arrow-down div:hover i {
   }
   #about-us .about-us_image {
     display: none;
+  }
+}
+
+.section-title {
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+}
+
+.section-title_heading {
+  margin: 0;
+  font-family: Source Sans Pro;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: #333b46;
+}
+
+.section-title_discr {
+  margin: 35px 0 60px 0;
+  color: #81868e;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 767px) {
+  .section-title_heading {
+    font-size: 18px;
+  }
+  .section-title_discr {
+    font-size: 12px;
+    margin: 25px 0 40px 0;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .section-title_heading {
+    font-size: 18px;
+  }
+  .section-title_discr {
+    font-size: 12px;
+    margin: 20px 0 35px 0;
+  }
+}
+
+#about-us-details {
+  width: 100%;
+  padding: 80px 0;
+  background-color: #f3f3f3;
+}
+
+#about-us-details .about-bouncy-info .icons .icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #81868e;
+  text-align: center;
+  cursor: pointer;
+}
+
+#about-us-details .about-bouncy-info .icons .icon i {
+  color: #fff;
+  font-size: 30px;
+  -webkit-transform: translateY(50%);
+  transform: translateY(50%);
+}
+
+#about-us-details .about-bouncy-info .icons .icon-on {
+  background-color: #19bd9a;
+}
+
+#about-us-details .about-bouncy-info .contents {
+  padding-top: 40px;
+}
+
+#about-us-details .about-bouncy-info .contents .content {
+  position: relative;
+  display: none;
+}
+
+#about-us-details .about-bouncy-info .contents .content h2 {
+  font-weight: 400;
+  font-size: 20px;
+  color: #464646;
+  margin: 0;
+}
+
+#about-us-details .about-bouncy-info .contents .content .text-info {
+  padding-top: 35px;
+}
+
+#about-us-details .about-bouncy-info .contents .content .text-info .text-info-1 {
+  font-size: 14px;
+  margin: 0;
+  color: #81868e;
+  font-weight: 400;
+}
+
+#about-us-details .about-bouncy-info .contents .content .text-info .text-info-2 {
+  font-size: 13px;
+  margin: 0;
+  color: #81868e;
+  font-weight: 400;
+}
+
+#about-us-details .about-bouncy-info .contents .show {
+  display: block;
+}
+
+@media only screen and (max-width: 767px) {
+  #about-us-details {
+    padding: 40px 0;
+  }
+  #about-us-details .about-bouncy-info .icons .icon {
+    width: 40px;
+    height: 40px;
+  }
+  #about-us-details .about-bouncy-info .icons .icon i {
+    font-size: 20px;
+  }
+  #about-us-details .about-bouncy-info .contents {
+    padding-top: 20px;
+  }
+  #about-us-details .about-bouncy-info .contents .content h2 {
+    font-size: 16px;
+  }
+  #about-us-details .about-bouncy-info .contents .content .text-info {
+    padding-top: 20px;
+  }
+  #about-us-details .about-bouncy-info .contents .content .text-info .text-info-1 {
+    font-size: 13px;
+  }
+  #about-us-details .about-bouncy-info .contents .content .text-info .text-info-2 {
+    font-size: 11px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  #about-us-details {
+    padding: 40px 0;
+  }
+  #about-us-details .about-bouncy-info .icons .icon {
+    width: 20px;
+    height: 20px;
+    margin-left: 8px;
+  }
+  #about-us-details .about-bouncy-info .icons .icon i {
+    display: none;
+  }
+  #about-us-details .about-bouncy-info .contents {
+    padding-top: 20px;
+  }
+  #about-us-details .about-bouncy-info .contents .content h2 {
+    font-size: 16px;
+  }
+  #about-us-details .about-bouncy-info .contents .content .text-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-top: 20px;
+  }
+  #about-us-details .about-bouncy-info .contents .content .text-info .text-info-1 {
+    font-size: 13px;
+  }
+  #about-us-details .about-bouncy-info .contents .content .text-info .text-info-2 {
+    font-size: 11px;
+    margin-top: 10px;
   }
 }
